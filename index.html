@@ -1,56 +1,89 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mijn Plantenshop 🌿</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mijn Plantenshop</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5fff5;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8fff8;
+    }
+
     header {
-      background-color: #4caf50;
-      color: white;
-      padding: 1rem;
-      text-align: center;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    main {
-      padding: 2rem;
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4caf50;
     }
-    .product {
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .header-right {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    input[type="text"] {
+      padding: 0.5rem;
       border: 1px solid #ccc;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      background-color: white;
-      border-radius: 8px;
-    }
-    .product h2 {
-      margin-top: 0;
-    }
-    .buy-button {
-      background-color: #4caf50;
-      color: white;
-      padding: 0.5rem 1rem;
-      border: none;
       border-radius: 4px;
+    }
+
+    .cart-icon {
+      font-size: 1.3rem;
       cursor: pointer;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Welkom bij Mijn Plantenshop</h1>
-  </header>
-  <main>
-    <div class="product">
-      <h2>Monstera Deliciosa</h2>
-      <p>Prachtige kamerplant met grote bladeren.</p>
-      <p><strong>Prijs:</strong> €14,95</p>
-      <button class="buy-button" onclick="alert('Bestellen kan later!')">Koop nu</button>
+    <div class="logo">Plantenshop</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Winkel</a>
+      <a href="#">Categorieën</a>
+      <a href="#">Over ons</a>
+      <a href="#">Contact</a>
+      <a href="#">FAQ</a>
+    </nav>
+
+    <div class="header-right">
+      <input type="text" placeholder="Zoeken..." />
+      <div class="cart-icon">🛒</div>
     </div>
-  </main>
+  </header>
+
+  <!-- De rest komt straks... -->
+
 </body>
 </html>
