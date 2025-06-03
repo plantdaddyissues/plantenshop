@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mijn Plantenshop </title>
+  <title>Mijn Plantenshop</title>
   <style>
     * {
       box-sizing: border-box;
@@ -17,122 +17,88 @@
     }
 
     header {
-      background-color: #ffffff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      padding: 1rem 2rem;
+      background-color: #000;
+      color: white;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      justify-content: space-between;
+      padding: 1.2rem 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     }
 
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #4caf50;
+    .logo-link img {
+      height: 70px;
+      filter: brightness(0) invert(1);
     }
 
     nav {
       display: flex;
       gap: 1.5rem;
+      align-items: center;
     }
 
     nav a {
       text-decoration: none;
-      color: #333;
+      color: white;
       font-weight: 500;
     }
 
-    .header-right {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
-
-    input[type="text"] {
-      padding: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+    nav a.home-icon::before {
+      content: '🏠';
+      margin-right: 5px;
     }
 
     .cart-icon {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       cursor: pointer;
     }
-    header {
-header {
-  background-color: #000;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.2rem 2rem; /* hoger gemaakt */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-}
 
-.logo-link img {
-  height: 70px; /* groter gemaakt */
-  filter: brightness(0) invert(1);
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-}
-
-nav a.home-icon::before {
-  content: '🏠';
-  margin-right: 5px;
-}
     .banner-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding: 2rem;
-}
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem;
+    }
 
-.banner {
-  position: relative;
-  width: 45%;
-  min-width: 280px;
-  text-decoration: none;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
+    .banner {
+      position: relative;
+      width: 45%;
+      min-width: 280px;
+      text-decoration: none;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
 
-.banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease;
-}
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
 
-.banner:hover img {
-  transform: scale(1.05);
-}
+    .banner:hover img {
+      transform: scale(1.05);
+    }
 
-.banner span {
-  position: absolute;
-  bottom: 15px;
-  left: 20px;
-  font-size: 1.5rem;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
-  font-weight: bold;
-}
+    .banner span {
+      position: absolute;
+      bottom: 15px;
+      left: 20px;
+      font-size: 1.5rem;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
 
   <header>
     <a href="index.html" class="logo-link">
-  <img src="logo.png" alt="Plant Daddy Issues logo">
-</a>
+      <img src="logo.png" alt="Plant Daddy Issues logo">
+    </a>
 
     <nav>
       <a href="index.html" class="home-icon">Home</a>
@@ -143,23 +109,19 @@ nav a.home-icon::before {
       <a href="#">FAQ</a>
     </nav>
 
-    <div class="header-right">
-      <div class="cart-icon">🛒</div>
-    </div>
+    <div class="cart-icon">🛒</div>
   </header>
+
   <section class="banner-links">
-  <a href="#" class="banner">
-    <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1000&q=80" alt="Kamerplanten">
-    <span>Kamerplanten</span>
-  </a>
-  <a href="#" class="banner">
-    <img src="https://images.unsplash.com/photo-1566838234214-10c463c68138?auto=format&fit=crop&w=1000&q=80" alt="Stekjes">
-    <span>Stekjes</span>
-  </a>
-</section>
-
-
-  <!-- De rest komt straks... -->
+    <a href="#" class="banner">
+      <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1000&q=80" alt="Kamerplanten">
+      <span>Kamerplanten</span>
+    </a>
+    <a href="#" class="banner">
+      <img src="https://images.unsplash.com/photo-1566838234214-10c463c68138?auto=format&fit=crop&w=1000&q=80" alt="Stekjes">
+      <span>Stekjes</span>
+    </a>
+  </section>
 
 </body>
 </html>
