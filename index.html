@@ -123,6 +123,103 @@
       <span>Stekjes</span>
     </a>
   </section>
+<!-- 🌿 PRODUCTEN GRID START -->
+<style>
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .product-card {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .product-card .info {
+    padding: 1rem;
+  }
+
+  .product-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .product-card p {
+    font-weight: bold;
+    color: #4caf50;
+  }
+
+  .add-to-cart {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 1rem;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .product-card:hover .add-to-cart {
+    opacity: 1;
+  }
+</style>
+
+<section class="product-grid">
+  <div class="product-card">
+    <img src="dragon.jpg" alt="Alocasia Dragon Scale Variegata">
+    <div class="info">
+      <h3>Alocasia Dragon Scale Variegata</h3>
+      <p>€80</p>
+    </div>
+    <button class="add-to-cart">🛒 Toevoegen</button>
+  </div>
+
+  <div class="product-card">
+    <img src="thai.jpg" alt="Monstera Thai Constellation">
+    <div class="info">
+      <h3>Monstera Thai Constellation</h3>
+      <p>€40</p>
+    </div>
+    <button class="add-to-cart">🛒 Toevoegen</button>
+  </div>
+
+  <div class="product-card">
+    <img src="maharani.jpg" alt="Alocasia Maharani Variegata">
+    <div class="info">
+      <h3>Alocasia Maharani Variegata</h3>
+      <p>€400</p>
+    </div>
+    <button class="add-to-cart">🛒 Toevoegen</button>
+  </div>
+
+  <div class="product-card">
+    <img src="bambino.jpg" alt="Alocasia Bambino Pink Variegata">
+    <div class="info">
+      <h3>Alocasia Bambino Pink Variegata</h3>
+      <p>€40</p>
+    </div>
+    <button class="add-to-cart">🛒 Toevoegen</button>
+  </div>
+</section>
+<!-- 🌿 PRODUCTEN GRID EIND -->
 
 </body>
 </html>
